@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css2?family=Platypi&display=swap" rel="stylesheet"> 
+      <style>
+          body {
+              font-family: 'Platypi', sans-serif; 
+          }
+      </style>
+      <title>Global Mental Health</title>
+   </head>
+   <!--Body below -->
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://i.postimg.cc/nMbWFY5h/2024-04-29-0vh-Kleki.png" class="mr-2"><a class="navbar-brand" href="index.html">The ND Mental Health Analysis Project</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Main Page</a></li>
+                <li class="nav-item"><a class="nav-link" href="GlobalMentalHealth.html">Global Mental Health</a></li>
+                <li class="nav-item"><a class="nav-link" href="USAMentalHealth.html">USA Mental Health</a></li>
+                <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+            </ul>
+         </div>
+      </nav>
+      <!-- Page content below-->
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <div class="jumbotron">
+            <h1 class="display-4">Mental Health, Globally</h1>
+            <p class="lead">This page analyzes mental disorders around the globe through animated and complex visualizations along with descriptions and insights.</p>
+            <hr class="my-4">
+            <h3>Curious about this dataset?</h3>
+            <a class="btn btn-primary btn-lg" href="https://www.kaggle.com/datasets/imtkaggleteam/mental-health/data" role="button">I want to learn more</a>
+         </div>
+         <!-- Start of figure 1-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Prevalence for Mental Disorders by Country Over Time - Choropleth Map</h1>
+               <embed src="./global_total_disorder_chloropleth.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This animated choropleth map visualizes the change in total disorders by country over the span of multiple decades. While, generally, certain regions maintain consistency in the total disorders (such as within most of East Asia, where the disorders remain low), it is apparent that certain countries are outliers in their region, such as the US, Brazil, Iran, and New Zeland. It is particularly from the late 90s and foward that countries seem to increase in total disorders. For example, Brazil and Australia rapidly change in total disorder rate. It also appears that China actually decreases in total number of disorders in the second half of the 2000s which is against the overall trend. The rate of total disorders does not seem to be associated with location, but perhaps other factors such as the political/cultural climate. </h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+                <img src="https://i.postimg.cc/N0YKnYG6/Screenshot-2024-04-30-220951.png" class="enlarged-photo">
+            </div>
+        </div>
+         <!--fig 2-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Mental Disorders v. Global Rate Over Time - Bar Chart</h1>
+                <embed src="./global_disorder_bar_chart.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This animated bar chart depicts the distribution of disorders, globally, over the years. When animated, anxiety and depression remain the most common disorders, with slight increase over the years. This trend can also be recognized in USA-specific data, meaning that both nationally and globally, depression and anxiety are major issues. The number of schizophrenia disorders and eating disorders remain realtively equal. However, the schizophrenia rate seems to remain constant while the eating disorders rate fluctuates. From 2004 and onward, though, depression seems to decrease a bit while the rate of anxiety disorders increases rapidly. Throughout the whole period of time, bipolar disorders stay at a fairly constant value. </h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+                <img src="https://i.postimg.cc/N0YKnYG6/Screenshot-2024-04-30-220951.png" class="enlarged-photo">
+            </div>
+        </div>
+         <!--fig3-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Time v. Global Anxiety Disorders Rate in the Most Populated Countries - Line Chart</h1>
+                <embed src="./global_anxiety_disorder_line_chart.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This line chart displays anxiety diagnoses rates over the span of multiple decades for the top 10 most populated countries, such as India, China, and the U.S. While these are the most populated countries, there is a strong variation in overall anxiety disorder rates over time. Brazil has maintained the highest rate of anxiety, with a sharp increase in the early 2000s. On the other hand, India has maintained a consistently low rate of anxiety diagnoses. This variation might be attributed to the culture around diagnosing anxiety or speaking to mental health professionals. It also might be caused by environmental/cultural factors between various regions. Bangladesh, China, India, Indonesia, Mexico, Nigeria, Pakistan, and Russia all remain below the value 4 in terms of prevalence of anxiety disorders. It is notable, though, that towards the early 2000s, Mexico experienced a great increase in the rate of anxiety diagnoses. This is also a similar phenomenon for the U.S. and Brazil, and may be accounted for by political issues. </h5>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="https://i.postimg.cc/N0YKnYG6/Screenshot-2024-04-30-220951.png" class="enlarged-photo">
+                </div>
+            </div>
+         <!--fig 4-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Prevalence for Depressive Disorders by Country Over Time - Choropleth Map</h1>
+                <embed src="./depressive_disorders_choropleth_div.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This choropleth map focuses on the distribution of depressive disorders by country on a global scale. While certain regions of the world do not display much change or a high rate of depression over time (such as in East Asia or certain areas of South America), it is clear that relevant to the total disorders map, the countries with the highest rates of depressive disorders vary. For example, Greenland, Central African Republic, and Uganda have an extremely high rate of depression despite not seeming to deal with the full breadth of disorders displayed from total disorders. Countries like Peru and Argentina maintain a lack of total disorders, but their adjacent country Brazil seems to have a high rate of total depressive disorders. This is similar to the result of the total disorders choropleth map. Countries like Brazil and the U.S. increase in total disorders and total depressive disorders most likely due to political or cultural factors. Overall, the change in depressive disorders prevalence generally matches with the change in total disorders prevalence globally. </h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+                <img src="https://i.postimg.cc/N0YKnYG6/Screenshot-2024-04-30-220951.png" class="enlarged-photo">
+            </div>
+        </div>
+         <!--fig 5-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Eating Disorder Rate by Continent and Country - Treemap</h1>
+                <embed src="./global_eating_disorder_treemap.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This treemap showcases the distribution in eating disorder rates by continent and country. Overall, the continent with the highest eating disorder rate is Europe. Interestingly, the top countries within Europe are not necessarily the top countries for total disorders or depressive disorders. For example, within Europe, the top three countries for eating disorder rates are Monaco, Spain, and Italy. For depressive disorder rates, however, these countries remain relatively low. This implies that eating disorders may not be related to other mental illnesses. The continent with the lowest eating disorder rate is Oceania, which may be due to the low population. Between the Americas and Asia, the distribution of eating disorders is almost equivalent. For the Americas, Greenland and the U.S. are top contributors to the total eating disorder rate, which aligns with their high rates of depressive disorders shown in a previous choropleth map. This differs from the countries in Europe, and suggests that eating disorders may be linked to depression at times (such as in the Americas), but also may be caused by other factors like culture or dietary landscape (such as in Europe). </h5>
+            </div>
+         </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>

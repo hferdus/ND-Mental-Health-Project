@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css2?family=Platypi&display=swap" rel="stylesheet"> 
+      <style>
+          body {
+              font-family: 'Platypi', sans-serif;  
+          }
+      </style>
+      <title>USA Mental Health</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://i.postimg.cc/nMbWFY5h/2024-04-29-0vh-Kleki.png" class="mr-2"><a class="navbar-brand" href="index.html">The ND Mental Health Analysis Project</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="index.html">Main Page</a></li>
+               <li class="nav-item"><a class="nav-link" href="GlobalMentalHealth.html">Global Mental Health</a></li>
+               <li class="nav-item"><a class="nav-link" href="USAMentalHealth.html">USA Mental Health</a></li>
+               <li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <div class="jumbotron">
+            <h1 class="display-4">Suicide, Nationally</h1>
+            <p class="lead">This page analyzes suicide data across the United States through animated and complex visualizations along with descriptions and insights.</p>
+            <hr class="my-4">
+            <h3>Curious about this dataset?</h3>
+            <a class="btn btn-primary btn-lg" href="https://catalog.data.gov/dataset/death-rates-for-suicide-by-sex-race-hispanic-origin-and-age-united-states-020c1" role="button">I want to learn more</a>
+         </div>
+         <div class='my-5'></div>
+         <!--Start of figures!-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Suicide Rates by Age - Heatmap</h1>
+               <embed src="./suicide_heatmap_by_age.html"
+                type="text/html" height="700" width="1000" />
+               <h5> This heatmap examines change in suicide rate of various age groups over time. In the 1950s, there is a high rate of suicide for people 65 years and up. As time progresses, though, it becomes apparent that the distribution in suicide rate equalizes among most of the age brackets, with the rate of suicide somewhat declining for those older and the rate of suicide for young adults almost doubling from the mid-1990s to 2010. For the 10-14 year age bracket, the heatmap shows a consistently low value for suicide rate, meaning that suicide is generally uncommon for children and tweens in the US. Overall, there is a general decline in suicide rates over the years until around 2010 when the rate increases slightly. This suggests that the late '90s saw a decline in suicide due to some unknown factor such as increased quality of life that may have led to increased suicide rates from 2010 onwards due to factors like development in technology and change in pop culture.</h5>
+            </div>
+         </div>
+         <div class='my-5'></div>
+         <!--Second figure below-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Suicide Rate by Demographics (Gender, Race, Age, and Hispanic Orgin) - Treemap</h1>
+               <embed src="./suicide_rate_treemap.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This treemap examines the distribution of suicide rate by demographic. Interestingly enough, the top three groups with the highest suicide rate out of the dataset are all white men from 25 years old and up. However, the fourth highest group is 15-24 year old American Indians/Alaskan Natives, which is significantly smaller portion of the U.S. population. This raises a question as to why this demographic group particularly suffers mentally. The top 11 groups by suicide rate are also all male, with the first highest female demographic group for suicide rates being white women aged from 45-64 years old. The lowest demographic group in terms of suicide rates nationally are black/African American women ages 65 and up. Overall, the groups with the highest suicide rates are generally white men or American Indian/Alaskan Native men. </h5>
+            </div>
+         </div>
+         <div class='my-5'></div>
+         <!--Third figure below-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Suicide Rates over Time for Age Groups - Scatter Plot</h1>
+               <embed src="./suicide_by_age_scatter.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This animated scatter plot highlights the suicide rates for each age group over the span of approximately 70 years. The most concerning aspect of this plot is how, for younger age groups, the suicide rate launches upwards in recent years. This shows the increasing prevalence of mental health issues in today's world for all age groups rather than those who are much older and prone to issues such as isolation and grief. As the animation goes through each age group, it appears that younger age groups see an upward trend in suicide rates over the years while older groups see a downwards trend. For those in the 35-44 age range, the rate seems to be constant, with a value hovering around 15. While the suicide rate is generally far different between the 1950s and the late 2010s, it is also notable that the suicide rate changes towards the late 90s onwards. This is also noticable in the global mental disorders choropleths. This implies a significant decrease in mental health during that time caused the rise in suicide rates. </h5>
+            </div>
+         </div>
+         <div class='my-5'></div>
+         <!--Fourth figure below-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Gender v. Suicide Rate over Time - Bar Chart</h1>
+               <embed src="./suicide_by_gender_bar.html"
+                type="text/html" height="700" width="1000" />
+               <h5>This bar chart examines the suicide rates for both genders over time. Both genders generally hover around the same rate, with males accounting for three to four times the amount of suicides. There is a visible decline in suicides when entering the early 2000s, and then a sharp increase in suicide rate entering the 2010s. From this chart, it is easy to infer that certain factors from 2010 and onwards must have contributed to an increase in suicide for all groups. Relative to the earlier treemap of suicide rates by various demographic bucket, it appears that suicide is much more likely for men than women, though here it is strictly grouped by gender rather than considering aspects of race. Consistently, females and males nationally experience a similar fluctuation in suicide rate over the years. </h5>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col">
+                <img src="https://i.postimg.cc/N0YKnYG6/Screenshot-2024-04-30-220951.png" class="enlarged-photo">
+            </div>
+        </div>
+         <!--Fifth figure below-->
+         <div class="row">
+            <div class="col-md-9">
+                <h1>Distribution of Mental Disorders in the U.S. - Pie Chart</h1>
+               <embed src="./disorder_pie_chart_USA.html"
+                type="text/html" height="700" width="1000" />
+               <h5> In this pie chart, the distribution of mental disorders in the U.S. can be analyzed. It is apparent that U.S. citizens are predominantly plagued by depression and anxiety. Interestingly enough, schizophrenia has a greater effect on the population than eating disorders do. Schizophrenia has been recognized to be a genetic disorder, but according to The Genetics of Eating Disorders by Wade Berrettini, MD (PMID: 21191522), there is a genetic component of eating disorders beyond the sociocultural aspect we assume EDs are from. This raises the question as to whether or not the percentage of citizens affected by schizophrenia and eating disorders being relatively equal is due to genetics. Bipolar disorder accounts for 5.2% of the total disorders for the US population, while depression and anxiety make up for a total of 87.1% of all the total disorders for the US. With bipolar disorder, schizophrenia, and eating disorders having the lowest relevance, it can be implied that it is more likely for someone to develop depression and anxiety than the other disorders. This makes sense considering how research suggests a genetic factor to bipolar, eating, and schizophrenia disorders. Overall, as seen with the distribution in disorders globally and nationally, depression and anxiety are most likely to plague society. </h5>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <img src="https://i.postimg.cc/N0YKnYG6/Screenshot-2024-04-30-220951.png" class="enlarged-photo">
+        </div>
+    </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
